@@ -6,14 +6,18 @@ aside {
   width: 88px;
   padding: 16px;
   overflow-x: hidden;
+  background-color: var(--bg-color);
 }
-aside:hover {
+aside:hover,
+aside.expand_able {
   width: 300px;
 }
-aside:hover .aside_icon_container {
+aside:hover .aside_icon_container,
+aside.expand_able .aside_icon_container {
   display: flex;
 }
-aside:hover .aside_icon_container p {
+aside:hover .aside_icon_container p,
+aside.expand_able .aside_icon_container p {
   display: block;
 }
 
@@ -52,3 +56,5 @@ aside:hover .aside_icon_container p {
 .aside_icon:hover {
   background-color: var(--hover-color);
 }
+
+/* expand control */

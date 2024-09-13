@@ -1,0 +1,77 @@
+main {
+  border: 1px solid red;
+  margin-top: 64px;
+  margin-left: 88px;
+}
+
+main.expand_able {
+  margin-left: 300px;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  margin-top: 35px;
+  border-radius: 8px;
+  border: 1px solid var(--hover-color);
+}
+
+.input_title,
+.input_note {
+  height: 46px;
+  padding: 0 0 0 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.input_note {
+  padding-top: 0.6rem;
+  resize: none;
+}
+
+.input_controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  padding-inline: 1rem;
+  font-size: 20px;
+}
+
+.input_icon {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.input_icon:hover {
+  background-color: var(--hover-color);
+}
+.close_btn {
+  background-color: inherit;
+  padding: 0.4rem 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.close_btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* functionality */
+.input_title,
+.input_controller {
+  display: none;
+}
+.input_container.display .input_title,
+.input_container.display .input_controller {
+  display: flex;
+}
+.input_field {
+}

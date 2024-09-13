@@ -5,9 +5,9 @@ import { IoTrashBin } from "react-icons/io5";
 
 import React from "react";
 
-export default function SideNav() {
+export default function SideNav({ toggleStatus }) {
   return (
-    <aside>
+    <aside className={toggleStatus === true ? style.expand_able : ""}>
       <div className={style.aside_content}>
         <div className={style.aside_icon_container}>
           <div className={style.aside_icon}>
