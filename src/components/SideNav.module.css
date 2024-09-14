@@ -2,11 +2,13 @@ aside {
   position: fixed;
   top: 68px;
   left: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 88px;
+  height: calc(100vh - 68px);
   padding: 16px;
   overflow-x: hidden;
   background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
 }
 aside:hover,
 aside.expand_able {

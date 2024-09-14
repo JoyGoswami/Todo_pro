@@ -1,0 +1,94 @@
+.notes_box {
+  border: 1px solid var(--hover-color);
+  box-shadow: var(--box-shadow);
+  width: calc(100% / 5);
+  min-width: 243px;
+  border-radius: 8px;
+  /* position: relative; */
+}
+.notes_title,
+.notes_textarea_content {
+  width: 100%;
+  height: 46px;
+  padding: 0 0 0 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.notes_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notes_textarea_content {
+  display: -webkit-box; /* Enables multi-line truncation */
+  -webkit-box-orient: vertical; /* Sets vertical orientation */
+  overflow: hidden; /* Hides overflowed text */
+  text-overflow: ellipsis; /* Show ellipsis (...) */
+  -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+  height: 3.5em;
+}
+.notes_control_container {
+  height: 36px;
+  padding-inline: 1rem;
+}
+.note_controll_inner {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.notes_icon {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.notes_icon:hover {
+  background-color: var(--hover-color);
+}
+.notes_btn {
+  background-color: inherit;
+  padding: 0.4rem 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.notes_btn:hover {
+  background-color: var(--hover-color);
+}
+.notes_box:hover .note_controll_inner {
+  display: flex;
+}
+
+/* expand functionality */
+.notes_box.notes_box.expandable {
+  border: none;
+  box-shadow: none;
+}
+.notes_box.expandable .notes_input_container {
+  position: absolute;
+  border: 1px solid var(--hover-color);
+  box-shadow: var(--box-shadow);
+  width: 700px;
+  height: 50vh;
+  /* left: -226px; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.notes_box.notes_box.expandable .notes_textarea_content {
+  height: 92px;
+  -webkit-line-clamp: 7;
+}
+.note_click {
+}

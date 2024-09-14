@@ -1,0 +1,15 @@
+.note_container {
+  /* border: 1px solid red; */
+  margin-left: 88px;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+.note_container.expand_able {
+  margin-left: 300px;
+}

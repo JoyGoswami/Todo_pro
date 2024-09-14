@@ -1,6 +1,6 @@
 main {
-  border: 1px solid red;
-  margin-top: 64px;
+  /* border: 1px solid red; */
+  margin-top: 94px;
   margin-left: 88px;
 }
 
@@ -27,6 +27,7 @@ main.expand_able {
   border: none;
   outline: none;
 }
+
 .input_note {
   padding-top: 0.6rem;
   resize: none;

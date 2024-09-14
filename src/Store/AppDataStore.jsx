@@ -8,9 +8,18 @@ const AppDataContextProvider = ({ children }) => {
     let newNote = [...noteData, { title: title, note: note }];
     setNote(newNote);
   }
+  function handleDelete(title) {
+    let newNote = noteData.filter((data) => data.title !== title);
+
+    setNote(newNote);
+  }
   return (
     <AppDataContext.Provider
-      value={{ noteData: noteData, handleSubmit: handleSubmit }}
+      value={{
+        noteData: noteData,
+        handleSubmit: handleSubmit,
+        handleDelete: handleDelete,
+      }}
     >
       {children}
     </AppDataContext.Provider>

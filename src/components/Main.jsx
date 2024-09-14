@@ -77,6 +77,7 @@ function Main({ toggleStatus }) {
           id="input_title"
           className={`${style.input_title} ${style.input_field}`}
           placeholder="Title"
+          maxLength="50"
         />
         <textarea
           value={text}
@@ -87,6 +88,7 @@ function Main({ toggleStatus }) {
           id="input_note"
           className={`${style.input_note} ${style.input_field}`}
           placeholder="Take a note..."
+          maxLength="300"
         ></textarea>
         <div className={`${style.input_controller} ${style.input_field}`}>
           <div onClick={handleCloser} className={style.input_icon}>

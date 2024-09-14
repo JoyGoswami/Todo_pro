@@ -7,6 +7,7 @@ import SideNav from "./components/SideNav";
 import Main from "./components/Main";
 import AppDataContextProvider, { AppDataContext } from "./Store/AppDataStore";
 import NoteContainer from "./components/NoteContainer";
+import Welcome from "./components/Welcome";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -26,8 +27,9 @@ function App() {
       <AppDataContextProvider>
         <Nav handleToggle={handleToggle} toggleStatus={toggle} />
         <SideNav toggleStatus={toggle} />
-        <Main toggleStatus={toggle} /*handleSubmit={handleSubmit} */ />
-        <NoteContainer />
+        <Main toggleStatus={toggle} />
+        <Welcome />
+        <NoteContainer toggleStatus={toggle} />
       </AppDataContextProvider>
     </>
   );
