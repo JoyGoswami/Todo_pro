@@ -10,7 +10,6 @@ function Notes(notes) {
 
   function handleBoxClick(event) {
     setExpand(true);
-    console.log(event.target.classList);
     if (event.target.classList.contains(style.note_click)) {
       setExpand(true);
     } else {
@@ -18,7 +17,6 @@ function Notes(notes) {
     }
   }
 
-  console.log(isExpanded);
   return (
     <div
       className={`${style.notes_box} ${isExpanded ? style.expandable : ""} ${

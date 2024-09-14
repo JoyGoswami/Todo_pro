@@ -5,7 +5,6 @@ import Notes from "./Notes";
 
 function NoteContainer({ toggleStatus }) {
   const { noteData } = useContext(AppDataContext);
-  console.log(noteData);
   return (
     <section
       className={`${toggleStatus === true ? style.expand_able : ""} ${
